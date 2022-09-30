@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Create Menu</h1>
+    <form #addData="ngForm" (ngSubmit)="addMenu(addData)">
+        <div class="form-group">
+            <input type="text" 
+            ngModel 
+            id="menuName"
+            name="menuName"
+            #MenuName 
+            placeholder="Enter the Menu Name">
+        </div>
+    
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
